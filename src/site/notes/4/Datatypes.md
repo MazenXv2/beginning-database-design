@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4/datatypes/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"beginning-database-design/4/datatypes","permalink":"/beginning-database-design/4/datatypes/","dg-note-properties":{}}
 ---
 
 
