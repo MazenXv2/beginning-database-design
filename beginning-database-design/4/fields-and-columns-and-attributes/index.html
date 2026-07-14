@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Database Modeling Building Blocks</title>
+<title>Fields and columns and attributes</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -36,18 +36,8 @@
 <div class="header-meta">
 </div>
 </header>
-<p>In this chapter, you learn about the following:<br>
-❑ <a class="internal-link" target="" data-note-icon="" href="/beginning-database-design/4/information-and-data-and-data-integrity/">Information and data and data integrity</a><br>
-❑ <a class="internal-link" target="" data-note-icon="" href="/beginning-database-design/4/tables/">Tables</a><br>
-❑ <a class="internal-link" target="" data-note-icon="" href="/beginning-database-design/4/fields-and-columns-and-attributes/">Fields and columns and attributes</a><br>
-❑ <a class="internal-link" target="" data-note-icon="" href="/beginning-database-design/4/datatypes/">Datatypes</a><br>
-❑ <a class="internal-link" target="" data-note-icon="" href="/beginning-database-design/4/validation-and-null-values-and-constraints/">Validation and NULL values and Constraints</a><br>
-❑ <a class="internal-link is-unresolved" href="/404" target="">Relations and relationships and some normalization</a><br>
-❑ <a class="internal-link is-unresolved" href="/404" target="">Entity Relationship Diagrams (ERDs)</a><br>
-❑ <a class="internal-link is-unresolved" href="/404" target="">Primary and foreign keys</a><br>
-❑ <a class="internal-link is-unresolved" href="/404" target="">Referential integrity</a><br>
-❑ <a class="internal-link is-unresolved" href="/404" target="">Indexes</a><br>
-❑ <a class="internal-link is-unresolved" href="/404" target="">Specialized objects (views and materialized views)</a></p>
+<p>The terms field, column, and attribute all mean the same thing. They are all terms used to describe a field in a table. A field applies structure and definition to a chunk of data within each repeated record. Data is not actually repeated on every record, but the structure of fields is applied to each record. So, data on each record can be different, both for the record as a whole, and for each field value. Note the use of the term “can be” rather than “is,” implying that there can be duplication across both fields and records, depending on requirements and constraints.</p>
+<p>A constraint constrains (restricts) a value. For example, in Figure 3-5 the second box showing NOT NULL for the first three fields specifies that the ISBN, PUBLISHER_ID, and PUBLICATION_ID fields can never contain NULL values in any record.</p>
 </main>
 <script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
 <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
