@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https:///Beginning_Database_Design.github.io/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https:///Beginning_Database_Design.github.io">
     <title>Digital Garden</title>
-    <link href="https:///Beginning_Database_Design.github.io//feed.xml" rel="self" >
-    <link href="https:///Beginning_Database_Design.github.io/" >
-    <updated>2026-07-14T09:35:06Z</updated>
-    <id>https:///Beginning_Database_Design.github.io/</id>
+    <link href="https:///Beginning_Database_Design.github.io/feed.xml" rel="self" >
+    <link href="https:///Beginning_Database_Design.github.io" >
+    <updated>2026-07-14T09:35:31Z</updated>
+    <id>https:///Beginning_Database_Design.github.io</id>
         <entry>
             <title>
                 Beginning Database Design
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/</id>
             <content type="html">
                 &lt;h2 id=&quot;1-1-examining-the-types-of-databases-examining-the-types-of-databases&quot; tabindex=&quot;-1&quot;&gt;1. &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://beginning_database_design.github.io/1/examining-the-types-of-databases/&quot;&gt;Examining the Types of Databases&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&quot;2-2-understanding-database-model-design-understanding-database-model-design&quot; tabindex=&quot;-1&quot;&gt;2. &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://beginning_database_design.github.io/2/understanding-database-model-design/&quot;&gt;Understanding Database Model Design&lt;/a&gt;&lt;/h2&gt;
@@ -19,15 +19,15 @@
 &lt;h2 id=&quot;4-4-database-modeling-building-blocks-database-modeling-building-blocks&quot; tabindex=&quot;-1&quot;&gt;4. &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://beginning_database_design.github.io/4/database-modeling-building-blocks/&quot;&gt;Database Modeling Building Blocks&lt;/a&gt;&lt;/h2&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//" >
+            <link href="https:///Beginning_Database_Design.github.io/" >
         </entry>
         <entry>
             <title>
                 Validation and NULL values and Constraints
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//4/validation-and-null-values-and-constraints/</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/4/validation-and-null-values-and-constraints/</id>
             <content type="html">
                 &lt;p&gt;Relational databases allow constraints, which restrict values that are allowed to be stored in table fields:&lt;/p&gt;
 &lt;ol&gt;
@@ -36,15 +36,15 @@
 &lt;/ol&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//4/validation-and-null-values-and-constraints/" >
+            <link href="https:///Beginning_Database_Design.github.io/4/validation-and-null-values-and-constraints/" >
         </entry>
         <entry>
             <title>
                 Tables
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//4/tables/</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/4/tables/</id>
             <content type="html">
                 &lt;p&gt;&lt;em&gt;&amp;quot;a table is a bucket into which data is poured.&amp;quot;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&quot;the-bucket-metaphor&quot; tabindex=&quot;-1&quot;&gt;The Bucket Metaphor&lt;/h2&gt;
@@ -68,15 +68,15 @@
 &lt;p&gt;&lt;img src=&quot;https://beginning_database_design.github.io/img/user/4/Pasted%20image%2020260713201825.png&quot; alt=&quot;Pasted image 20260713201825.png&quot; /&gt;&lt;/p&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//4/tables/" >
+            <link href="https:///Beginning_Database_Design.github.io/4/tables/" >
         </entry>
         <entry>
             <title>
                 Information, data, and data integrity
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//4/information-data-and-data-integrity/</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/4/information-data-and-data-integrity/</id>
             <content type="html">
                 &lt;p&gt;The following list leads off the definitions of basic terms and concepts:&lt;/p&gt;
 &lt;ul&gt;
@@ -85,29 +85,29 @@
 &lt;/ul&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//4/information-data-and-data-integrity/" >
+            <link href="https:///Beginning_Database_Design.github.io/4/information-data-and-data-integrity/" >
         </entry>
         <entry>
             <title>
                 Fields, columns, and attributes
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//4/fields-columns-and-attributes/</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/4/fields-columns-and-attributes/</id>
             <content type="html">
                 &lt;p&gt;The terms field, column, and attribute all mean the same thing. They are all terms used to describe a field in a table. A field applies structure and definition to a chunk of data within each repeated record. Data is not actually repeated on every record, but the structure of fields is applied to each record. So, data on each record can be different, both for the record as a whole, and for each field value. Note the use of the term “can be” rather than “is,” implying that there can be duplication across both fields and records, depending on requirements and constraints.&lt;/p&gt;
 &lt;p&gt;A constraint constrains (restricts) a value. For example, in Figure 3-5 the second box showing NOT NULL for the first three fields specifies that the ISBN, PUBLISHER_ID, and PUBLICATION_ID fields can never contain NULL values in any record.&lt;/p&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//4/fields-columns-and-attributes/" >
+            <link href="https:///Beginning_Database_Design.github.io/4/fields-columns-and-attributes/" >
         </entry>
         <entry>
             <title>
                 Datatypes
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//4/datatypes/</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/4/datatypes/</id>
             <content type="html">
                 &lt;p&gt;Datatypes can be divided into three separate sections:&lt;/p&gt;
 &lt;ul&gt;
@@ -215,15 +215,15 @@ Imagine a standard table with 100 records, each storing a 1 MB product image dir
 &lt;/ol&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//4/datatypes/" >
+            <link href="https:///Beginning_Database_Design.github.io/4/datatypes/" >
         </entry>
         <entry>
             <title>
                 Database Modeling Building Blocks
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//4/database-modeling-building-blocks/</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/4/database-modeling-building-blocks/</id>
             <content type="html">
                 &lt;p&gt;In this chapter, you learn about the following:&lt;br /&gt;
 ❑ &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://beginning_database_design.github.io/404&quot; target=&quot;&quot;&gt;Information, data, and data integrity &lt;/a&gt;&lt;br /&gt;
@@ -239,15 +239,15 @@ Imagine a standard table with 100 records, each storing a 1 MB product image dir
 ❑ &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://beginning_database_design.github.io/404&quot; target=&quot;&quot;&gt;Specialized objects (views and materialized views)&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//4/database-modeling-building-blocks/" >
+            <link href="https:///Beginning_Database_Design.github.io/4/database-modeling-building-blocks/" >
         </entry>
         <entry>
             <title>
                 Database Modeling in the Workplace
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//3/database-modeling-in-the-workplace/</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/3/database-modeling-in-the-workplace/</id>
             <content type="html">
                 &lt;h2 id=&quot;understanding-business-rules-and-objectives&quot; tabindex=&quot;-1&quot;&gt;Understanding Business Rules and Objectives&lt;/h2&gt;
 &lt;p&gt;You can create a beautifully appropriate database model with clearly defined objects, using a set of clearly defined database design methodological steps. Elegant solutions, however, must be practical and useful. You must understand that you are designing for practical application, not elegance, and the most elegant solution is not always the most practical. The importance of understanding the nature of the business is paramount to understanding how best to model that business in a database.&lt;/p&gt;
@@ -289,15 +289,15 @@ Imagine a standard table with 100 records, each storing a 1 MB product image dir
 &lt;p&gt;Even though a task like this can seem daunting, it really only has two very distinct steps. First, establish and build the correct structure. If the company has decided that the existing structure is problematic, the company probably has plenty of ideas on how to fix it. The company probably also knows who can give you all the correct information. Second, copy data across to new tables, if necessary.&lt;/p&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//3/database-modeling-in-the-workplace/" >
+            <link href="https:///Beginning_Database_Design.github.io/3/database-modeling-in-the-workplace/" >
         </entry>
         <entry>
             <title>
                 Understanding Database Model Design
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//2/understanding-database-model-design/</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/2/understanding-database-model-design/</id>
             <content type="html">
                 &lt;p&gt;Database design is so important because all applications written against that database model design are completely dependent on the structure of that underlying database. If the database model must be altered at a later stage, everything constructed based on the database model probably must be changed and perhaps even completely rewritten. That’s all the applications—and I mean all of them! That can get very expensive and time consuming. Design the database model in the same way that you would design an application—using tools, flowcharts, pretty pictures, Entity Relationship Diagrams (ERDs), and anything else that might help to ensure that what you intend to build is not only what you need, but also will actually work, and preferably work without ever breaking.&lt;/p&gt;
 &lt;p&gt;A computer system, and database model that ultimately turns into a complete dud as a result of poor planning and design can cost a company more money than it is prepared to spend and perhaps more than a company is even able to lose.&lt;/p&gt;
@@ -351,15 +351,15 @@ Imagine a standard table with 100 records, each storing a 1 MB product image dir
 &lt;p&gt;These separate steps are interchangeable, repeatable, iterative, and really anything-able, according to various different approaches used for different database engines and different database designer personal preferences. Some designers may even put some of these steps into single steps and divide others up into more detailed sets of subset steps. In other words, this is all open to interpretation. The only thing I do insist that should be universal is that you draw the ERDs and build tables well before you build metadata table creation code, placing visual design prior to physical implementation&lt;/p&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//2/understanding-database-model-design/" >
+            <link href="https:///Beginning_Database_Design.github.io/2/understanding-database-model-design/" >
         </entry>
         <entry>
             <title>
                 Examining the Types of Databases
                 
             </title>
-            <updated>2026-07-14T09:34:54Z</updated>
-            <id>https:///Beginning_Database_Design.github.io//1/examining-the-types-of-databases/</id>
+            <updated>2026-07-14T09:35:18Z</updated>
+            <id>https:///Beginning_Database_Design.github.io/1/examining-the-types-of-databases/</id>
             <content type="html">
                 &lt;p&gt;we need to branch into both the database and application arenas because the choice of database modeling strategy is affected by application requirements. After all, the reason a database you build a database is to service some need. That need is influenced by one or more applications.&lt;/p&gt;
 &lt;p&gt;Databases functionally fall into three general categories:&lt;/p&gt;
@@ -385,6 +385,6 @@ Imagine a standard table with 100 records, each storing a 1 MB product image dir
 &lt;/ol&gt;
 
             </content>
-            <link href="https:///Beginning_Database_Design.github.io//1/examining-the-types-of-databases/" >
+            <link href="https:///Beginning_Database_Design.github.io/1/examining-the-types-of-databases/" >
         </entry>
 </feed>
