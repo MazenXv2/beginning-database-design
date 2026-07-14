@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"beginning-database-design/4/Tables.md","permalink":"/beginning-database-design/4/tables/","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/4/tables/","dg-note-properties":{}}
 ---
 
 _"a table is a bucket into which data is poured."_

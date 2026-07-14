@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"beginning-database-design/3/Database Modeling in the Workplace.md","permalink":"/beginning-database-design/3/database-modeling-in-the-workplace/","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/3/database-modeling-in-the-workplace/","dg-note-properties":{}}
 ---
 
 
