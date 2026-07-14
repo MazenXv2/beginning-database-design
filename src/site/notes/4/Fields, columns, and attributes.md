@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"beginning-database-design/4/Fields, columns, and attributes.md","permalink":"/beginning-database-design/4/fields-columns-and-attributes/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"beginning-database-design/4/Fields, columns, and attributes.md","permalink":"/beginning-database-design/4/Fields, columns, and attributes/","dg-note-properties":{}}
 ---
 
 
