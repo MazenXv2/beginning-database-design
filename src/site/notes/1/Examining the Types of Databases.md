@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1/examining-the-types-of-databases/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"beginning-database-design/1","dg-permalink":"examining-the-types-of-databases","permalink":"/examining-the-types-of-databases/","title":"Examining the Types of Databases","dg-note-properties":{"title":"Examining the Types of Databases"}}
 ---
 
 
