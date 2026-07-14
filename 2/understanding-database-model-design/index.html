@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Understanding Database Model Design</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.d92311c2.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>Database design is so important because all applications written against that database model design are completely dependent on the structure of that underlying database. If the database model must be altered at a later stage, everything constructed based on the database model probably must be changed and perhaps even completely rewritten. That’s all the applications—and I mean all of them! That can get very expensive and time consuming. Design the database model in the same way that you would design an application—using tools, flowcharts, pretty pictures, Entity Relationship Diagrams (ERDs), and anything else that might help to ensure that what you intend to build is not only what you need, but also will actually work, and preferably work without ever breaking.</p>
+<p>A computer system, and database model that ultimately turns into a complete dud as a result of poor planning and design can cost a company more money than it is prepared to spend and perhaps more than a company is even able to lose.</p>
+<p>Design is the process of ensuring that it all works without actually building it. Design is a little like testing something on paper before spending thousands of hours building it in possibly the wrong way.</p>
+<p>Design is needed to ensure that it works before spending humungous amounts of money finding out that it doesn’t. The idea is to fix as many teething problems and errors in the design. Fixing the design is much easier than fixing a finished product. A design on paper costs a fraction of what building and implementing the real thing would cost. Waste a small amount of money in planning, rather than lose more than can be afforded when it’s too late to fix it.</p>
+<h2 id="defining-the-objectives" tabindex="-1">Defining the Objectives</h2>
+<p>Defining objectives is probably the single most important task done in planning any project, be it a skyscraper or a database model. You could, of course, just start anywhere and dive right into the project with your eyes shut. But that is not planning. The more you plan what you are going to do, the more likely the final result will fit your requirements.</p>
+<p>Defining the objectives is the basic step of defining how you are going to get from A to B.</p>
+<h5 id="there-are-of-course-a-number-of-points-to-guide-the-establishment-of-design-objectives-for-a-proper-relational-database-model-design" tabindex="-1">There are, of course, a number of points to guide the establishment of design objectives for a proper relational database model design:</h5>
+<ol>
+<li>
+<p>Aim for a well-structured database model: A well-structured database model is simple, easy to read, and easy to comprehend. If your company has a database model made up of 50 pieces of A4-sized paper taped to an entire wall, and links between tables taking 20 minutes to trace, you have a problem.</p>
+</li>
+<li>
+<p>Data integrity: Integrity is a set of rules in a database model, ensuring that data is not lost within the database, and that data is only destroyed when it should be.</p>
+</li>
+<li>
+<p>Support both planned queries and ad-hoc or unplanned queries: Planned queries are pre-written, routine reports (like daily sales summaries) that run efficiently because the database knows what to expect, while ad-hoc queries are spontaneous, unpredictable questions (like &quot;show me all customers who bought X and Y in the last 3 hours&quot;) that users invent on the fly. In high-traffic OLTP databases, these unplanned queries are dangerous because they can scan millions of records, eat up system resources, and slow down or lock out the critical real-time transactions. Therefore, the fewer ad-hoc queries the better; in extreme cases, they must be banned entirely from the OLTP system and redirected to a separate data warehouse platform, which is specifically optimized for heavy, flexible analysis without jeopardizing daily operations.</p>
+</li>
+<li>
+<p>Ad-hoc queries can cause serious performance issues. Customer-facing applications that require millisecond response times (which depend solely on a high-performance OLTP database) do not get along well with ad-hoc queries. Don’t risk losing your customers and wind up with no business to speak of. Do not allow anyone to do anything ad-hoc in an application-controlled OLTP database.</p>
+</li>
+<li>
+<p>database design must align with <strong>business objectives</strong>, not blindly follow normalization rules. While highly normalized structures are great for OLTP systems (to ensure data integrity during fast transactions), they don't necessarily reflect how a business actually operates. In contrast, <strong>denormalized</strong> structures (like those used in data warehouses) often look more like the business itself—making them better suited for management-level <strong>ad-hoc queries</strong> and strategic analysis. The key takeaway is that subjecting a customer-facing OLTP database to ad-hoc activity can be disastrous for performance and customer satisfaction, so the level of normalization should be chosen based on the database's <strong>purpose</strong>: strict normalization for transactional systems, and looser, more business-aligned structures for analytical systems where flexibility is more important than raw speed.</p>
+</li>
+<li>
+<p>database must be fast and efficient enough to handle whatever type of change is thrown at it, whether it's a customer updating their own phone number in an OLTP system (a tiny, single-record change) or a nightly batch process that recalculates millions of sales totals in a data warehouse (a massive, high-speed operation). The key point is that performance isn't a one-size-fits-all concept—an OLTP system needs millisecond response times for individual actions, while a data warehouse needs raw throughput to process huge volumes of data quickly. Ultimately, the design, indexing, and hardware must be tuned specifically for the <strong>type and scale of changes</strong> that database is expected to perform.</p>
+</li>
+<li>
+<p>Future growth must always be a serious consideration: <strong>databases can experience explosive, unpredictable growth</strong>, especially in internet-facing OLTP systems where a viral ad or a lucky social media post can suddenly bring millions of new users overnight. Unlike data warehouses, where growth follows a predictable schedule (e.g., daily or weekly data loads), OLTP growth can spike without warning, and if the database design can't handle the surge in transactions, the system will slow down or crash—causing frustrated customers to abandon your site just as quickly as they discovered it, potentially destroying the business overnight.</p>
+</li>
+<li>
+<p>Minimize dependence between applications and database model structures if you expect change. This makes it easier to change and enhance both database model and application code in the future.</p>
+</li>
+</ol>
+<h5 id="positive-results-from-using-good-database-model-design-objectives-are-as-follows" tabindex="-1">positive results from using good database model design objectives are as follows:</h5>
+<ol>
+<li>From an operational perspective, the most important objective is fulfilling the needs of applications.</li>
+<li>Queries should be relatively easy to code without producing errors because of lack of data integrity or poor table design.</li>
+<li>The easier applications can be built, the better. In general, the less co-dependence between database model and application, the better. In tightly controlled OLTP application environments where no ad-hoc activity is permitted, this is easy.</li>
+</ol>
+<h2 id="looking-at-methods-of-database-design" tabindex="-1">Looking at Methods of Database Design</h2>
+<h5 id="there-are-various-methodologies-available-for-designing-database-models-each-of-these-different-approaches-consists-of-a-number-of-steps-the-following-sequence-of-steps-to-database-model-design" tabindex="-1">There are various methodologies available for designing database models. Each of these different approaches consists of a number of steps. The following sequence of steps to database model design:</h5>
+<ul>
+<li>Requirements analysis—Collect information about the nature of the data, features required, and any specialized needs such as expected output responses. This step covers what is needed, so simply analyze it and write it down. Talk to the customer and company employees to get a better idea of exactly what they need.</li>
+<li>Conceptual design—This is where you get to use the fancy graphical tools and draw the pretty pictures—Entity Relationship Diagrams (ERDs). This step includes creation of tables, fields within those tables, and relationships between the tables.</li>
+<li>Logical design—Create database language commands to generate table definitions. Some tools used for creating ERDs allow generation of data definition language (DDL) scripting; however, they are likely to generate generic scripts. Be sure that you check anything generated before exe cutting in any specific database engine.</li>
+<li>Physical design—Adjust database language commands to alter the database model for the underlying physical attributes of tables. For example, you might want to store large binary objects in separate, underlying files to that of standard relational record-field data.</li>
+<li>Tuning phase—This step includes items such as appropriate indexing, further normalization, or even denormalization, security features, and anything else not covered by the previous steps.</li>
+</ul>
+<p>These separate steps are interchangeable, repeatable, iterative, and really anything-able, according to various different approaches used for different database engines and different database designer personal preferences. Some designers may even put some of these steps into single steps and divide others up into more detailed sets of subset steps. In other words, this is all open to interpretation. The only thing I do insist that should be universal is that you draw the ERDs and build tables well before you build metadata table creation code, placing visual design prior to physical implementation</p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>

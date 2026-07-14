@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Datatypes</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.d92311c2.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>Datatypes can be divided into three separate sections:</p>
+<ul>
+<li>Simple datatypes—These are datatypes applying a pattern or value limitation on a single value such as a number.</li>
+<li>Complex datatypes—These include any datatypes bridging the gap between object and relational databases, including items such as binary objects and collection arrays. Specifics on complex datatypes are not strictly necessary for this book as they are more object-oriented than relational in nature.</li>
+<li>Specialized datatypes —These are present in more advanced relational databases catering to inherently structured data such as XML documents, spatial data, multimedia objects and even dynamically definable datatypes.</li>
+</ul>
+<h3 id="simple-datatypes" tabindex="-1">Simple Datatypes</h3>
+<ol>
+<li>
+<p>Strings: A string is a sequence of one or more characters.</p>
+<ul>
+<li>Fixed-length strings—A fixed-length string will always store the specified length declared for the datatype. The value is padded with spaces even when the actual string value is less than the length of the datatype length. For example, the value NY in a CHAR(3) vari able would be stored as NY plus a space character. Fixed-length strings are generally only used for short length strings because a variable-length string (discussed next) requires storage of both value and length.</li>
+<li>Variable-length strings —A variable-length string allows storage into a datatype as the actual length of the string, as long as a maximum limit is not exceeded. The length of the string is variable because when storing a string of length less than the width specified by the datatype, the string is not padded (as is the case for fixed-length strings). Only the actual string value is stored. Storing the string XXX into a variable length string datatype of ten characters in length stores the three characters only, and not three characters padded by seven spaces. Different databases use different naming conventions for variable-length string datatypes. VARCHAR(n) or TEXT(n) are common naming formats for variable-length strings.</li>
+</ul>
+</li>
+<li>
+<p>Numbers—Numeric datatypes are often the most numerous field datatypes in many database tables.</p>
+<ul>
+<li>Integers—An integer is a whole number such that no decimal digits are included. Some databases allow more detailed specification using small integers and long integers, as well and standard-sized integer datatypes.</li>
+<li>Fixed-length decimals—A fixed-length decimal is a number, including a decimal point, where the digits on the right side of the decimal are restricted to a specified number of digits. For example, a DECIMAL(5,2) datatype will allow the values 4.1 and 4.12, but not 4.123.</li>
+<li>Floating points—A floating-point number is just as the name implies, where the decimal point “floats freely” anywhere within the number. In other words, the decimal point can appear anywhere in the number. Floating-point values can have any number of digits both before and after the decimal point, even none on either side. Values such as 1000, 1000.12345, and 0.8843343223 are valid floating-point numbers. Floating point values are likely to be less efficient in storage and retrieval than fixed-length decimals and integers because they are less predictable in terms of record length and otherwise.</li>
+</ul>
+</li>
+<li>
+<p>Dates and times—Dates can be stored as simple dates or dates including timestamp information. In actuality, simple dates are often stored as a Julian date or some other similar numbering system. A Julian date is a time in seconds from a specified start date (such as January 1, 1960). When simple date values are set or retrieved in the database, they are subjected to a default formatting process spitting out to, for example, a dd/mm/yyyy format excluding seconds (depending on default database formatting settings, of course). A timestamp datatype displays both date and time information regardless of any default date formatting executing in the database (sometimes stored as a special timestamp datatype).</p>
+</li>
+</ol>
+<h3 id="complex-datatypes" tabindex="-1">Complex Datatypes</h3>
+<ol>
+<li>
+<p>Binary objects:</p>
+<ol>
+<li>
+<p>The Core Problem: Size Mismatch: Databases are optimized for handling small, uniform pieces of data—typically <strong>strings and numbers</strong>.</p>
+<ul>
+<li>
+<p><strong>Standard table record size:</strong> Usually fits within <strong>2 KB</strong> (often called a <em>page</em> or <em>block</em>). This is the fundamental unit of storage the database reads and writes to disk.</p>
+</li>
+<li>
+<p><strong>Modern file size:</strong> A single small graphic (like a JPEG or PNG for a website) is easily <strong>larger than 2 KB</strong>. A sound file, video, or high-res image is exponentially larger.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Why This Breaks Database Performance : To understand why this is a disaster for performance, you have to understand how databases read data:</p>
+<ul>
+<li>
+<p>Databases use a <strong>&quot;cache&quot; or &quot;buffer pool&quot;</strong> in memory. They read entire 2 KB blocks from disk into this cache at once.</p>
+</li>
+<li>
+<p>The database assumes that if you request one record in that block, you are likely to need the <em>other</em> records in that same block soon (this is called <em>locality of reference</em>).</p>
+</li>
+</ul>
+<p><strong>The Disaster Scenario:</strong><br>
+Imagine a standard table with 100 records, each storing a 1 MB product image directly inside the table row.</p>
+<ul>
+<li>
+<p>To read just <strong>one</strong> record, the database must load a 1 MB image into its cache.</p>
+</li>
+<li>
+<p>Because the cache is only, say, 100 MB, it can only hold 100 images at a time, instead of millions of small text records.</p>
+</li>
+<li>
+<p><strong>Result:</strong> The cache fills up instantly with massive graphics, throwing out all the small, frequently accessed text data (like customer names or order IDs). Performance grinds to a halt because the database is constantly swapping massive files in and out of memory and reading huge chunks from slow disk drives.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The Solution: Physical Separation (Binary Objects): To fix this, database creators introduced <strong>Binary Objects</strong>. The key concept is <strong>physical separation</strong>.</p>
+<ul>
+<li>
+<p>The <strong>table record</strong> stores only the regular small data (e.g., <code>ProductID = 101</code>, <code>ProductName = &quot;Shirt&quot;</code>) and a <strong>pointer</strong> (a reference key) to the binary file.</p>
+</li>
+<li>
+<p>The <strong>Binary Object</strong> (BLOB) stores the massive graphic (or sound file, video, XML document) in a <strong>completely separate storage area</strong> outside the table's main block structure.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The Advantages of This Separation</p>
+<ul>
+<li>
+<p><strong>Table performance is protected:</strong> When the database queries the table for <code>ProductID</code> and <code>ProductName</code>, it only reads tiny 2 KB blocks. Its cache stays efficient and fast.</p>
+</li>
+<li>
+<p><strong>Binary objects are streamed separately:</strong> When the application actually <em>needs</em> the graphic, it retrieves it directly from the BLOB storage area. It doesn't pollute the core table cache.</p>
+</li>
+<li>
+<p><strong>Flexibility:</strong> You can store <em>anything</em> in binary format—graphics, sound, video, large text (like XML or JSON documents), or compressed files.</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Reference pointers —In the C programming language, a reference pointer is a variable containing an address on disk or in memory of whatever the programmer wants to point at.</p>
+</li>
+<li>
+<p>Collection arrays —Some relational databases allow creation of what an object database would call a collection. A collection is a set of values repeated structurally (values are not necessarily the same) where the array is contained within another object, and can only be referenced from that object. In the case of a relational database, the containment factor is the collection being a field in the table. Collection arrays can have storage structures defined in alternative locations to table fields as for binary objects, but do not have to be as such. Collection arrays, much like program arrays, can be either fixed length or dynamic. A dynamic array is a variable-length array, and is actually a pointer. When using a fixed-length array, the programmer must specify the length of the array before using it.</p>
+</li>
+<li>
+<p>User-defined types—Some relational databases allow programmable or even on-the-fly creation of user-defined types. A user-defined type allows the creation of new types. Creation of a new type means that user-defined datatypes can be created by programmers, even using other user-defined types. It follows that fields can be created in tables where those fields have user-defined datatypes.</p>
+</li>
+</ol>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
