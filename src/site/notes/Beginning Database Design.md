@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Beginning_Database_Design.gitbub.io/Beginning Database Design.md","permalink":"/beginning-database-design-gitbub-io/beginning-database-design/","tags":["gardenEntry"],"dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"beginning-database-design/Beginning Database Design.md","permalink":"/beginning-database-design/beginning-database-design/","tags":["gardenEntry"],"dg-note-properties":{}}
 ---
 
 
