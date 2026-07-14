@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4/datatypes/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"Beginning_Database_Design.gitbub.io/4/Datatypes.md","permalink":"/beginning-database-design-gitbub-io/4/datatypes/","dg-note-properties":{}}
 ---
 
 

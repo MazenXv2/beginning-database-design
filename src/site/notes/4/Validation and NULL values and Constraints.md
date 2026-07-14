@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4/validation-and-null-values-and-constraints/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"Beginning_Database_Design.gitbub.io/4/Validation and NULL values and Constraints.md","permalink":"/beginning-database-design-gitbub-io/4/validation-and-null-values-and-constraints/","dg-note-properties":{}}
 ---
 
 Relational databases allow constraints, which restrict values that are allowed to be stored in table fields:

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4/database-modeling-building-blocks/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"Beginning_Database_Design.gitbub.io/4/Database Modeling Building Blocks.md","permalink":"/beginning-database-design-gitbub-io/4/database-modeling-building-blocks/","dg-note-properties":{}}
 ---
 
 

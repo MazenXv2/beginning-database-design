@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4/fields-columns-and-attributes/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"Beginning_Database_Design.gitbub.io/4/Fields, columns, and attributes.md","permalink":"/beginning-database-design-gitbub-io/4/fields-columns-and-attributes/","dg-note-properties":{}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4/information-data-and-data-integrity/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"Beginning_Database_Design.gitbub.io/4/Information, data, and data integrity.md","permalink":"/beginning-database-design-gitbub-io/4/information-data-and-data-integrity/","dg-note-properties":{}}
 ---
 
 
