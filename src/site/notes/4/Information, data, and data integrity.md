@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"beginning-database-design/4/Information, data, and data integrity.md","permalink":"/beginning-database-design/4/Information, data, and data integrity/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"beginning-database-design/4/Information, data, and data integrity.md","permalink":"/beginning-database-design/4/information-data-and-data-integrity/","dg-note-properties":{}}
 ---
 
 

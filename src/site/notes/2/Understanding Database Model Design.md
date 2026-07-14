@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"beginning-database-design/2/Understanding Database Model Design.md","permalink":"/beginning-database-design/2/Understanding Database Model Design/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"beginning-database-design/2/Understanding Database Model Design.md","permalink":"/beginning-database-design/2/understanding-database-model-design/","dg-note-properties":{}}
 ---
 
 
